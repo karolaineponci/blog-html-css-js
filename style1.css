@@ -1,0 +1,351 @@
+
+@media
+only screen and (max-width : 600px ){
+
+    header{
+        height: 200px;
+    }
+
+    header h1{
+        line-height: 1.0;
+        font-size: 35px;
+        padding: 5px;
+    }
+
+    header nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header nav li a {
+        margin-right: 0;
+        display: block;
+        font-size: 12px;
+        padding: 0;
+        line-height: 1.0;
+    }
+
+    main{
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+
+    p{
+        padding: 4px;
+        margin-bottom: 15px;
+    }
+    li{
+        margin-bottom: 15px;
+    }
+
+
+    img{
+        width: 80%;
+    }
+
+    /*imagem app pagamento china*/
+    .app_pay{
+        width: auto;
+    }
+
+    .image-container {
+        max-width: 70%;
+    }
+
+    .destaques {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .img-card h3{
+        font-size: 12px;
+    }
+
+    .back_h2 {
+        font-size: 12px;
+    }
+
+    .back_h2_1{
+        font-size: 25px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    /*css dos comentarios*/
+    .comentario-paises {
+        margin: 5px 25px; 
+    }
+
+    .comentarios {
+        margin: 30px 25px; 
+    }
+
+    .comentario-coluna {
+        flex: 1 1 100%;
+    }
+
+    .contato {
+        margin: 30px 25px; 
+    }
+}
+
+
+@media
+only screen and (min-width : 600px ){
+
+    header{
+        height: 300px;
+    }
+
+    header h1{
+        line-height: 1.0;
+        font-size: 35px;
+        padding: 38px;
+    }
+
+    header nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header nav li a {
+        margin-right: 0;
+        display: block;
+        padding: 1px;
+        line-height: 0.9;
+    }
+
+    .destaques {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .img-card h3{
+        font-size: 16px;
+    }
+
+    main{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    img {
+        width: 90%;
+    }
+
+    .app_pay{
+        width: auto;
+    }
+
+    .back_h2 {
+        font-size: 25px;
+    }
+
+    .image-container {
+        max-width: 70%;
+    }
+
+
+    .comentario-paises {
+        margin: 30px 20px;
+    }
+
+    .comentarios {
+        margin: 30px 40px; 
+    }
+
+    .comentario-coluna {
+        flex: 1 1 calc(50% - 20px); 
+    }
+
+    .contato {
+        margin: 30px 40px; 
+    }
+}
+
+@media
+only screen and (min-width : 768px ){
+
+    header{
+        height: 400px;
+    }
+
+    header h1{
+        font-size: 60px;
+        padding: 100px;
+    }
+
+    .mcontinentes a{
+        display: flex;
+        color: rgb(255, 255, 255);
+        background-color: #186AAF;
+        padding: 10px;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .menu:hover .mcontinentes{
+        display: block;
+        padding: 8px;
+    }
+
+    header nav li{
+        display: inline-block;
+        
+    }
+    
+    header nav li a{
+        font-weight: bold;
+        font-size: 15px;
+        margin-right: 80px;
+        text-decoration: none;
+        text-shadow : 2px 2px 4px black;
+        text-transform: uppercase;
+    
+        display: inline-block;
+        color: white;
+        padding: 8px;
+    }
+    
+    header nav li a:hover{
+        text-shadow: none;
+        text-decoration: underline 2px white;
+    }
+
+    body{
+        font-size: 17px;
+    }
+
+    main{
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    p{
+        padding: 5px;
+    }
+
+    img {
+        width: 90%;
+    }
+
+    .image-container {
+        max-width: 350px;
+    }
+
+    .destaques {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .back_h2 {
+        height: 38px;
+    }
+
+    .img-card h3{
+        font-size: 15px;
+    }
+
+    .comentario-paises {
+        margin: 20px 60px;
+    }
+
+    .comentarios{
+        margin: 20px 100px;
+    }
+
+    .contato{
+        margin: 20px 100px;
+    }
+}
+
+@media
+only screen and (min-width : 992px ){
+
+
+    main{
+        margin-right: 80px;
+        margin-left: 80px;
+    }
+
+    p{
+        padding: 5px;
+    }
+
+    img{
+        width: auto;
+    }
+
+    .container {
+        display: flex;
+        align-items: flex-start; 
+        gap: 20px;
+    }
+
+    .image-container {
+        flex: 1;
+        max-width: 300px;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .text_lado {
+        flex: 2; /
+    }
+
+    .destaques {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .img-card h3{
+        font-size: 16px;
+    }
+
+    .comentario-paises {
+        margin: 20px 80px;
+    }
+
+    .comentarios{
+        margin: 20px 150px;
+    }
+
+    .comentario-coluna {
+        flex: 1 1 calc(33.333% - 20px);
+    }
+
+    .contato{
+        margin: 20px 150px;
+    }
+}
+
+
+@media
+only screen and (min-width : 1200px ){
+
+    img{
+        width: auto;
+    }
+
+    body img{
+        opacity: 0.8;
+    }
+
+    body img:hover{
+        opacity: 1.0;
+    }
+
+    .comentario-paises {
+        margin: 40px 250px; 
+    }
+
+    .comentarios {
+        margin: 60px 250px; 
+    }
+
+    .contato {
+        margin: 60px 250px; 
+    }
+}

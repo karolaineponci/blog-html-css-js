@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/iconaviao.png" type="image/x-icon">
+    <title>Comentários</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <lu>
+                <li><a href="index.html">Início</a></li>
+                <li class="menu"><a href="continentes.html">Continentes</a>
+                    <div class="mcontinentes">
+                        <a href="africa.html">África</a>
+                        <a href="america.html">Américas</a>
+                        <a href="asia.html">Ásia</a>
+                        <a href="europa.html">Europa</a>
+                        <a href="oceania.html">Oceânia</a>
+                    </div>
+                </li>
+                <li><a href="comentarios.html">Comentários</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </lu>
+        </nav>
+        
+        <h1>Guia de Viagens</h1>
+    </header>
+
+
+    <main class="comentarios">
+        <h2 class="title-coment">Deixe seu Comentário</h2>
+        <p>Aqui você pode deixar seu comentário, sugestão ou observação e também ler o comentário dos outros visitantes do site logo abaixo do formulário.</p> <br>
+        <form class="form-coment-paises">
+            <label for="nome" class="required">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="comentario" class="required">Comentário:</label><br>
+            <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="Enviar Comentário">
+        </form>
+    </main>
+
+    <section class="comentarios-exibicao">
+        <h2>Comentários</h2>
+        <div id="comentarios-container" class="comentarios-grid">
+            <div class="comentario-coluna"></div>
+            <div class="comentario-coluna"></div>
+            <div class="comentario-coluna"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Sobre Nós</h2>
+                <p>Somos um guia de viagens dedicado a fornecer informações úteis e dicas para viajantes. Nosso objetivo é ajudar você a planejar a viagem dos seus sonhos.</p>
+                <div class="contact">
+                    <span><i class="fas fa-envelope"></i> &nbsp;<a href="mailto:karolaine.ponci@unemat.br">karolaine.ponci@unemat.br</a></span>
+                </div>
+            </div>
+    
+            <div class="footer-section links">
+                <h2>Links Rápidos</h2>
+                <ul>
+                    <a href="index.html"><li>Início</li></a>
+                    <a href="continentes.html"><li>Continentes</li></a>
+                    <a href="comentarios.html"><li>Comentários</li></a>
+                    <a href="contato.html"><li>Contato</li></a>
+                </ul>
+            </div>
+
+            <div class="footer-bottom">
+                <img src="imagens/logosemfundo.png" alt="Logo" class="footer-logo" style="opacity: 1;">
+                <div class="footer-bottom-text">
+                    &copy; 2024 Guia de Viagens - Todos os direitos reservados.
+                </div>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+}
+
+/*menus inicio*/
+.mcontinentes a{
+    display: flex;
+    color: rgb(255, 255, 255);
+    background-color: #186AAF;
+    padding: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.mcontinentes {
+    position: absolute;
+    display: none;
+}
+
+.menu:hover .mcontinentes{
+    display: block;
+    padding: 8px;
+}
+
+/*css header*/
+header{
+    display: inline-block;
+    background-image: url('imagens/aviao-capa.jpg');
+    background-size: cover; 
+    background-position: center; 
+    height: 400px; 
+    color: white; 
+    padding: 0;
+}
+
+header h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    text-shadow : 2px 2px 4px black;
+    padding: 100px;
+}
+
+header nav{
+    text-align: center;
+}
+
+header nav li{
+    display: inline-block;
+    
+}
+
+header nav li a{
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 80px;
+    text-decoration: none;
+    text-shadow : 2px 2px 4px black;
+    text-transform: uppercase;
+
+    display: inline-block;
+    color: white;
+    padding: 8px;
+}
+
+header nav li a:hover{
+    text-shadow: none;
+    text-decoration: underline 2px white;
+}
+
+/*css body*/
+body{
+    font-size: 17px;
+    background-color: rgba(139, 157, 175, 0.041);
+    line-height: 150%;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+}
+
+body a{
+    color: rgba(0, 0, 255, 0.885);
+}
+
+/*diversos*/
+main{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p{
+    text-align: justify;
+    text-indent: 25px;
+    padding: 14px;
+    color: #17181b;
+}
+
+a{
+    text-decoration: none;
+}
+
+h3{
+    padding: 20px;
+    font-size: 26px;
+    color: #004986;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: #6b696963;
+}
+
+/*css dos h2*/
+h2{
+    color: #004986;
+    font-size: 30px;
+    padding: 25px;
+}
+
+.back_h2 {
+    background-color: #004986;
+    color: white;
+    display: flex;
+    height: 35px; 
+    padding: 0;
+    margin: 0;
+}
+
+.back_h2_1{
+    background-color: #004986;
+    color: white;
+    display: flex;
+    height: 35px; 
+    padding: 0;
+    margin: 0;
+}
+
+.for_h2 {
+    padding: 20px 0px 0px 6px;
+    font-weight: 750;
+}
+
+.for_h2 a{
+    color: #004986;
+}
+.for_h2 a:hover{
+    background: #2390f541;
+    text-decoration: underline 2px;
+}
+
+/*css dos destaques no index*/
+.titledestaque{
+    font-size: 33px;
+}
+ 
+.menu-destaques h2{
+    margin: 40px auto 20px;
+    padding: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+.menu-links-img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.destaques {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+ul.destaques {
+    padding: 0;
+    margin: 14px auto;
+}
+
+.destaques li{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+/*css das imagens e textos nos destaques*/
+.img-card{
+    width: 96%;
+    margin: 2.5% 2.5%;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer
+}
+
+.img-card-bg{
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    padding-top: 50%;
+    width: 100%;
+    position: relative;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.img-card h3{
+    text-align: center;
+    line-height: 26px;
+    padding: 0;
+    margin: 0;
+    color: #1e2023;
+    z-index: 2000;
+    position: relative;
+    font-weight: 500;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 0.4px;
+    font-size: 1.17em;
+    font-weight: bold;
+}
+.img-card a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.img-card-bg {
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+/*css para as listas dos estaques*/
+.destaques li {
+    transition: transform 0.3s ease;
+}
+
+.destaques li:hover {
+    transform: scale(1.1);
+}
+
+.destaques li h3 a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+/*css para italico, sublinhado e negrito*/
+strong{
+    color: #004986;
+}
+strong a{
+    color: #0529dc;
+}
+
+strong a:hover{
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+em{
+    color: #0529dc;
+}
+
+/*asteristico dos comentarios e contato*/
+.required::after {
+    content: '*';
+    color: red;
+    margin-left: 5px;
+}
+
+/*css para comentarios guia países*/
+.comentario-paises {
+    max-width: 100%;
+    margin: 40px 250px; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.coment-paises-h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-coment-paises {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-coment-paises label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-coment-paises input[type="text"],
+.form-coment-paises textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-coment-paises input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form-coment-paises input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/*css guia comentarios */
+.comentarios {
+    max-width: 100%;
+    margin: 60px 50px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comentarios p{
+    color: #555;
+}
+
+.comentarios form label{
+    color: #555;
+}
+
+.title-coment {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #004986;
+}
+
+.form-coment {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-coment label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-coment input[type="text"],
+.form-coment textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-coment button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form-coment button:hover {
+    background-color: #0056b3;
+}
+
+/*css para exibição dos comentarios*/
+.comentarios-exibicao {
+    margin: 20px 0;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.comentarios-exibicao h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.comentarios-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.comentario-coluna {
+    flex: 1 1 calc(33.333% - 20px);
+    margin: 0 10px;
+}
+
+.comentario-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #004a8646;
+}
+
+.comentario-item p {
+    margin: 0;
+}
+
+.comentario-item .nome {
+    font-weight: bold;
+}
+
+/*css para contatos*/
+.contato {
+    max-width: 100%;    
+    padding: 30px;
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.title-contato {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #004986;
+}
+
+.contato p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.contato ul {
+    padding-right: 30px;
+    padding-left: 30px;
+    color: #555;
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-contato label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-contato input[type="text"],
+.form-contato input[type="email"],
+.form-contato textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-contato input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form-contato input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/*css para rodapé e outras informções no rodapé*/
+footer {
+    background: url('imagens/imgfooter.png') no-repeat center center/cover;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 14px;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-section.about h2 {
+    margin-bottom: 10px;
+}
+
+.footer-section.about p {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.contact span a{
+    display: block; 
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 1px;
+}
+
+
+.footer-section.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section.links ul li {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-section.links ul li:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 2px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.footer-section.links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section.contact-form {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-section.contact-form h2 {
+    margin-bottom: 10px;
+}
+
+
+.footer-bottom {
+    position: relative;
+    text-align: center;
+    margin-top: 17px;
+}
+
+.footer-logo {
+    display: block;
+    margin: 0 auto;
+    width: 300px; 
+}
+
+.footer-bottom-text {
+    margin-top: 13px; 
+}
